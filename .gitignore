@@ -1,0 +1,14 @@
+﻿# Python virtual environment
+.venv2/
+
+# Data and large files
+Data/processed/
+Biomedical Module/combined_df.pkl
+Deep Learning Module/models/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE/project settings
+.idea/
