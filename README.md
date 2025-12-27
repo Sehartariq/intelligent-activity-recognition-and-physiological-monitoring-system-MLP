@@ -1,91 +1,120 @@
-Title: Intelligent Health Monitoring System
+🩺 Intelligent Health Monitoring System
+📋 Project Overview
 
- **Project Overview**
+The Intelligent Health Monitoring System analyzes PPG (Photoplethysmography) and accelerometer signals to provide real-time health insights. The system can:
 
-This project presents an Intelligent Health Monitoring System that analyzes PPG (Photoplethysmography) and accelerometer signals to perform:
+Recognize human activities: Sit, Walk, Run 🪑🚶‍♂️🏃‍♂️
 
-* Human activity recognition (sit, walk, run)
+Estimate Heart Rate (HR) ❤️
 
-* Heart Rate (HR) estimation
+Estimate Blood Oxygen Saturation (SpO₂) 🩸
 
-* Blood Oxygen Saturation (SpO₂) estimation
+Provide explainable predictions using SHAP-based XAI module 🧩
 
-The system combines signal processing, feature extraction, and Machine Learning (MLP models) with an interactive Streamlit-based user interface.
+It combines signal processing, feature extraction, deep learning (MLP models), and Explainable AI with an interactive Streamlit-based user interface for easy visualization and interpretation.
 
- **Key Features**
+✨ Key Features
+📈 PPG Signal Processing
 
-**PPG Signal Processing**
+Bandpass filtering for noise removal 🔇
 
-Bandpass filtering for noise removal
+Peak-based heart rate estimation ❤️
 
-Peak-based heart rate estimation
+🩸 SpO₂ Estimation
 
-**SpO₂ Estimation**
+Physiological ratio-of-ratios (R) method using red & infrared PPG signals
 
-Uses physiological ratio-of-ratios (R) method from red & infrared PPG
+🏃‍♂️ Activity Recognition
 
-**Activity Recognition**
+Window-based accelerometer feature extraction
 
-* Window-based accelerometer feature extraction
-* Multi-Layer Perceptron (MLP) classifier
+Multi-Layer Perceptron (MLP) classifier
 
-Window-wise & Final Predictions
+Window-wise and aggregated final predictions
 
-Per-window predictions
+🧩 Explainable AI (XAI)
 
-Aggregated final health metrics
+SHAP-based interpretation of model predictions
 
-**Interactive UI**
+Understand feature contributions for activity and physiological parameter predictions
 
-* CSV upload
-* Signal visualization
-* Final and window-by-window results
+Visualize which features influence the predictions most 🔍
 
-**Technologies Used**
+🖥 Interactive UI
 
-* Python
-* NumPy, Pandas
-* SciPy (signal processing)
-* Scikit-learn (MLP models, scaling)
-* Matplotlib
-* Streamlit (web interface)
-* Joblib (model loading)
+Upload CSV files with biomedical signals 📂
 
- Project Structure
-├── app.py                     # Streamlit application
-├── Deep Learning Module/
-│   └── models/
-│       ├── activity_classification_mlp.pkl
-│       ├── activity_scaler.pkl
-│       ├── physio_mlp.pkl
-│       ├── physio_scaler_X.pkl
-│       └── physio_scaler_y.pkl
-├── Data/
-│   └── processed/
-│       └── biomedical_preprocessed.csv
+Visualize filtered signals and predictions 📊
+
+See final and per-window results
+
+Explore XAI visualizations for better interpretability 🧠
+
+🛠 Technologies Used
+
+Python 🐍
+
+NumPy, Pandas 📊
+
+SciPy (signal processing) ⚙️
+
+Scikit-learn (MLP models, scaling) 🤖
+
+Matplotlib 📈
+
+Streamlit (interactive web interface) 🌐
+
+Joblib (model saving/loading) 💾
+
+SHAP (Explainable AI) 🧩
+
+📂 Project Structure
+
+├── project.py # Streamlit application (run this to launch the project)
+
+
 ├── README.md
 
- **Workflow**
+🔄 Workflow
 
-* Upload raw biomedical CSV data
-* Signals are filtered and segmented into windows
-* Features are extracted per window
-* Trained MLP models predict:
-* Activity (classification)
-* Physiological R-ratio (regression)
-* HR and SpO₂ are computed and aggregated
-* Results are displayed visually
+Upload raw biomedical CSV data 📂
 
- **How to Run**
+Signals are filtered and segmented into windows 🔄
+
+Features are extracted per window ⚙️
+
+Trained MLP models predict:
+
+Activity (classification) 🏃‍♂️
+
+Physiological R-ratio (regression) → computes HR ❤️ and SpO₂ 🩸
+
+XAI module interprets feature contributions for better understanding 🧩
+
+Aggregated results and explanations are displayed visually 📊
+
+🚀 How to Run
+
+Install dependencies:
 
 pip install -r requirements.txt
 
-streamlit run app.py
 
-**Output**
+Run the Streamlit app:
 
-Filtered PPG waveform visualization
+streamlit run project.py
 
-Final predicted activity, HR, and SpO₂
+📊 Output
 
-Optional window-by-window predictions
+Visualized filtered PPG waveforms 📈
+
+Final predicted Activity, HR, and SpO₂ 🏃‍♂️❤️🩸
+
+Optional window-by-window predictions 🔍
+
+SHAP-based XAI explanations showing feature contributions 🧩
+
+📥 Dataset
+
+This project uses the Pulse Transit Time PPG dataset from PhysioNet:
+https://physionet.org/content/pulse-transit-time-ppg/1.1.0/
