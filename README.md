@@ -1,4 +1,5 @@
 🩺 Intelligent Health Monitoring System
+
 📋 Project Overview
 
 The Intelligent Health Monitoring System analyzes PPG (Photoplethysmography) and accelerometer signals to provide real-time health insights. The system can:
@@ -14,6 +15,7 @@ The Intelligent Health Monitoring System analyzes PPG (Photoplethysmography) and
 It combines signal processing, feature extraction, deep learning (MLP models), and Explainable AI with an interactive Streamlit-based user interface for easy visualization and interpretation.
 
 ✨ Key Features
+
 📈 PPG Signal Processing
 
     Bandpass filtering for noise removal 🔇
@@ -52,21 +54,21 @@ Visualize which features influence the predictions most 🔍
 
 🛠 Technologies Used
 
-Python 🐍
+    -Python 🐍
 
-NumPy, Pandas 📊
+    -NumPy, Pandas 📊
 
-SciPy (signal processing) ⚙️
+    -SciPy (signal processing) ⚙️
 
-Scikit-learn (MLP models, scaling) 🤖
+    -Scikit-learn (MLP models, scaling) 🤖
 
-Matplotlib 📈
+    -Matplotlib 📈
 
-Streamlit (interactive web interface) 🌐
+    -Streamlit (interactive web interface) 🌐
 
-Joblib (model saving/loading) 💾
+    -Joblib (model saving/loading) 💾
 
-SHAP (Explainable AI) 🧩
+    -SHAP (Explainable AI) 🧩
 
 📂 Project Structure
 
@@ -102,7 +104,7 @@ pip install -r requirements.txt
 
 Run the Streamlit app:
 
-streamlit run project.py
+    streamlit run project.py
 
 📊 Output
 
