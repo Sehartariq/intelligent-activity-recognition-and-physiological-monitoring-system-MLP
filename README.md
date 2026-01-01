@@ -2,35 +2,35 @@
 📋 Project Overview
 
 The Intelligent Health Monitoring System analyzes PPG (Photoplethysmography) and accelerometer signals to provide real-time health insights. The system can:
-
-Recognize human activities: Sit, Walk, Run 🪑🚶‍♂️🏃‍♂️
-
-Estimate Heart Rate (HR) ❤️
-
-Estimate Blood Oxygen Saturation (SpO₂) 🩸
-
-Provide explainable predictions using SHAP-based XAI module 🧩
+    
+    Recognize human activities: Sit, Walk, Run 🪑🚶‍♂️🏃‍♂️
+    
+    Estimate Heart Rate (HR) ❤️
+    
+    Estimate Blood Oxygen Saturation (SpO₂) 🩸
+    
+    Provide explainable predictions using SHAP-based XAI module 🧩
 
 It combines signal processing, feature extraction, deep learning (MLP models), and Explainable AI with an interactive Streamlit-based user interface for easy visualization and interpretation.
 
 ✨ Key Features
 📈 PPG Signal Processing
 
-Bandpass filtering for noise removal 🔇
-
-Peak-based heart rate estimation ❤️
+    Bandpass filtering for noise removal 🔇
+    
+    Peak-based heart rate estimation ❤️
 
 🩸 SpO₂ Estimation
 
-Physiological ratio-of-ratios (R) method using red & infrared PPG signals
+    Physiological ratio-of-ratios (R) method using red & infrared PPG signals
 
 🏃‍♂️ Activity Recognition
 
-Window-based accelerometer feature extraction
+    Window-based accelerometer feature extraction
 
-Multi-Layer Perceptron (MLP) classifier
-
-Window-wise and aggregated final predictions
+    Multi-Layer Perceptron (MLP) classifier
+    
+    Window-wise and aggregated final predictions
 
 🧩 Explainable AI (XAI)
 
@@ -42,13 +42,13 @@ Visualize which features influence the predictions most 🔍
 
 🖥 Interactive UI
 
-Upload CSV files with biomedical signals 📂
-
-Visualize filtered signals and predictions 📊
-
-See final and per-window results
-
-Explore XAI visualizations for better interpretability 🧠
+    Upload CSV files with biomedical signals 📂
+    
+    Visualize filtered signals and predictions 📊
+    
+    See final and per-window results
+    
+    Explore XAI visualizations for better interpretability 🧠
 
 🛠 Technologies Used
 
