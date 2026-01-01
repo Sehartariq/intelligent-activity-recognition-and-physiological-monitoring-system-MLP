@@ -118,3 +118,6 @@ SHAP-based XAI explanations showing feature contributions 🧩
 
 This project uses the Pulse Transit Time PPG dataset from PhysioNet:
 https://physionet.org/content/pulse-transit-time-ppg/1.1.0/
+
+📽️ project demo:
+https://github.com/user-attachments/assets/6f21f377-057f-4cfb-809d-275ec099adf0
